@@ -163,8 +163,8 @@ Below is a curated list of tool ideas waiting to be built. Each idea is a potent
 | ~~Password Generator~~ — ✅ [Built](tools/password-generator.html)        | Easy       |
 | ~~UUID Generator~~ — ✅ [Built](tools/uuid-generator.html)    | Easy       |
 | ~~Command Step Loader~~ — ✅ [Built](tools/command-step-loader.html) | Easy |
+| ~~Git Ignore Generator~~ — ✅ [Built](tools/git-ignore-generator.html) | Easy |
 | ~~QR Code Generator~~ — ✅ [Built](tools/qr-code-generator.html)        | Easy       |
-| Git Ignore Generator — generate .gitignore files for selected technologies | Easy |
 | Commit Message Generator — create conventional commit messages | Easy     |
 | Chmod Calculator — toggle permission bits, see numeric and symbolic notation | Easy |
 | Crontab Explainer — paste a cron expression, see next 5 run times in plain English | Easy |
