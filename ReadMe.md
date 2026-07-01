@@ -2,7 +2,7 @@
 
 A growing collection of useful developer tools, each built as a **single, self-contained HTML file**.
 
-No build step. No dependencies. No frameworks. Just open the file in your browser and it works.
+No build step. No frameworks. No npm. Just open the file in your browser and it works.
 
 ![Thumbnail](./thumb.png)
 
@@ -19,7 +19,7 @@ Most developer tools today come with baggage:
 
 > One tool. One file. Open and use.
 
-Every tool in this collection is a standalone `.html` file containing all the HTML, CSS, and JavaScript it needs. You can download a single file, open it in any browser, and start using it immediately, even offline.
+Every tool in this collection is a standalone `.html` file containing all the HTML, CSS, and JavaScript it needs. You can download a single file, open it in any browser, and start using it immediately. CDN links are used for lightweight libraries and fonts to keep files slim.
 
 ## Available Tools
 
@@ -280,10 +280,10 @@ One-File-Tools/
 | Principle             | Rule                                                                                        |
 | --------------------- | ------------------------------------------------------------------------------------------- |
 | **One file**          | Each tool is a single `.html` file.                                                         |
-| **Zero dependencies** | No npm, no CDN required (CDN optional for styling).                                         |
+| **Zero dependencies** | No npm, no build step. CDN links encouraged for libraries and fonts.                        |
 | **Browser only**      | Runs entirely client-side.                                                                  |
 | **Beginner friendly** | Code should be readable and learnable, even if AI is used, make sure to comment humane way. |
-| **Works offline**     | No server calls unless the tool's purpose requires it.                                      |
+| **Self-contained**    | Single HTML file with everything it needs. CDN for assets, no server-side code.              |
 | **Mobile ready**      | Responsive design on every tool.                                                            |
 
 ## SSoC (Social Summer of Code)

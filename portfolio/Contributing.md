@@ -351,7 +351,7 @@ Use `{{#if}}` instead of `{{#fieldName}}` when inside a loop (avoids Handlebars 
 ## Checklist before submitting
 
 - [ ] Template is a single `.hbs` file in `portfolio/`
-- [ ] All HTML, CSS in one file — no external JS dependencies
+- [ ] All HTML, CSS in one file — CDN links for libraries and fonts are fine
 - [ ] Works by opening the generated `.html` in a browser
 - [ ] Responsive — looks good on desktop, tablet, and mobile
 - [ ] Screenshot saved as `portfolio/[id].png` (1280x720 recommended)

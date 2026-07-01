@@ -6,7 +6,7 @@ Thank you for contributing a tool to One File Tools! This guide will walk you th
 
 ## What you're building
 
-A **single, self-contained HTML file** that does something useful for developers. Everything — HTML, CSS, and JavaScript — lives in one file. No build step, no `npm install`, no framework. Just open it in a browser and it works.
+A **single, self-contained HTML file** that does something useful for developers. Everything — HTML, CSS, and JavaScript — lives in one file. No build step, no `npm install`, no JS frameworks. CDN links for lightweight libraries and fonts are encouraged to keep files slim. Just open it in a browser and it works.
 
 ### Example
 
@@ -222,7 +222,7 @@ Check that your tool card appears on the landing page with the correct name, des
 - [ ] Test on **Chrome** and **Firefox** at minimum
 - [ ] Test on **mobile** (resize your browser or use DevTools responsive mode)
 - [ ] Check for **console errors** (open DevTools → Console)
-- [ ] Verify it works **offline** (disconnect your network and reload)
+- [ ] Verify core functionality works (CDN resources require a network connection, which is fine)
 - [ ] Test with **edge cases** (empty input, very long input, special characters)
 - [ ] Try **keyboard navigation** (Tab through all interactive elements)
 
@@ -257,6 +257,7 @@ Then open a Pull Request on GitHub.
 - [ ] **Single `.html` file** — all HTML, CSS, and JS in one file
 - [ ] **Works by opening in a browser** — no server, no build step
 - [ ] **No `npm install`** — no package manager dependencies
+- [ ] **CDN links encouraged** — use CDN for libraries and fonts instead of inlining source code
 - [ ] **Responsive design** — works on desktop and mobile
 - [ ] **No console errors**
 - [ ] **No tracking scripts** — no analytics, ads, or monetization
@@ -269,19 +270,18 @@ Then open a Pull Request on GitHub.
 - [ ] **Dark mode** — at minimum via `@media (prefers-color-scheme: dark)`
 - [ ] **Keyboard accessible** — all interactive elements reachable via Tab
 - [ ] **Semantic HTML** — `<header>`, `<main>`, `<footer>`, `<label>`, `<button>`, etc.
-- [ ] **Works offline** — no network calls unless the tool's purpose requires it
-
 ### May have
 
-- [ ] **CDN link for styling** (e.g., Tailwind CSS via CDN) — acceptable but optional
+- [ ] **CDN links** for lightweight CSS/JS libraries (e.g., Tailwind CSS, Highlight.js) — **preferred** over inlining library source code to keep files slim
 - [ ] **Google Fonts** — acceptable, but the system font stack from the template works fine with zero external requests
 - [ ] **External API calls** — only if the tool's core purpose requires it (e.g., DNS lookup). The tool should degrade gracefully without the API
 
 ### Must not have
 
-- [ ] **No JavaScript frameworks** — no React, Vue, Angular, Svelte, etc.
+- [ ] **No JS frameworks** — no React, Vue, Angular, Svelte, etc.
 - [ ] **No heavy UI libraries** — no Bootstrap JS, jQuery, etc.
 - [ ] **No `npm install`** — no package manager dependency
+- [ ] **No inlined library source** — use CDN links instead of copy-pasting minified library code
 - [ ] **No tracking or analytics** of any kind
 - [ ] **No ads or monetization**
 - [ ] **No server-side requirements**
@@ -401,7 +401,7 @@ If you're participating in **Social Summer of Code**:
 - [ ] Works in Chrome and Firefox
 - [ ] Works on mobile (responsive)
 - [ ] No console errors
-- [ ] Works offline (if applicable)
+- [ ] Core functionality works (CDN resources need network, which is fine)
 - [ ] Formatted with Prettier (`npx prettier --write tools/your-tool.html`)
 - [ ] Has dark mode support
 - [ ] Footer links back to One File Tools

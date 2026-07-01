@@ -34,9 +34,9 @@ This means:
 
 - Each tool lives in a **single `.html` file**.
 - It must work by simply **opening the file in a browser**.
-- **No build step**, no `npm install`, no framework.
+- **No build step**, no `npm install`, no JS frameworks (React, Vue, Angular, etc.).
+- **CDN links are encouraged** for lightweight libraries and fonts — prefer CDN over copy-pasting library source inline to keep files slim.
 - Code should be **readable**, someone learning web development should be able to understand it.
-- It should work **offline** whenever possible.
 
 ---
 
@@ -235,7 +235,7 @@ open index.html
 - Test on Chrome and Firefox at minimum.
 - Test on mobile (resize your browser or use DevTools responsive mode).
 - Check for console errors.
-- Verify it works offline (disconnect and reload).
+- Verify core functionality works (CDN resources require a network connection, which is fine).
 
 ### Step 10 — Submit
 
@@ -420,17 +420,16 @@ git commit -m "Add: resume theme — minimal"
 - [ ] Dark mode support (at minimum via `prefers-color-scheme`).
 - [ ] Keyboard accessible, all interactive elements reachable via Tab.
 - [ ] Semantic HTML (`<header>`, `<main>`, `<footer>`, `<label>`, etc.).
-- [ ] Works offline.
 
 ### May have
 
-- [ ] A CDN link for styling (e.g., Tailwind CSS via CDN), this is acceptable but up to you.
-- [ ] Google Fonts for typography — acceptable, but use the system font stack from the template if you want zero external requests.
-- [ ] External API calls, only if the tool’s core purpose requires it (e.g., DNS lookup). The tool should degrade gracefully without the API.
+- [ ] **CDN links** for lightweight CSS/JS libraries (e.g., Tailwind CSS, Highlight.js) — **preferred** over inlining library source code to keep files slim.
+- [ ] **Google Fonts** or other web fonts via CDN.
+- [ ] **External API calls**, only if the tool’s core purpose requires it (e.g., DNS lookup).
 
 ### Must not have
 
-- [ ] External JavaScript frameworks / heavy UI libraries (React, Vue, Angular, etc.).
+- [ ] **JS frameworks** (React, Vue, Angular, Svelte, etc.) or **heavy UI libraries** (Bootstrap JS, jQuery, etc.).
 - [ ] `npm install` or any package manager dependency.
 - [ ] Tracking or analytics of any kind.
 - [ ] Ads or monetization.
